@@ -4,37 +4,61 @@ boton.addEventListener("click",function (event){
     let selector=document.getElementById("producto").value
     alert("usted elige el"+selector)
     let total=0
-    let cantidad=0
+    let descuento=0
+    let cantidad=document.getElementById("cantidad").value
     switch(selector){
         case "28000":
-            alert("elegiste el 1")
+            
+            total=cantidad*28000
+            alert("el total es: "+total)
             break
         case "15000":
-            alert("elegiste el 2")
+           
+            total=cantidad*15000
+            alert(total)
             break
         case "10000":
-            alert("elegiste el 3")
+            
+            total=cantidad*10000
+            alert(total)
             break
         case "8500":
-            alert("elegiste el 4")
+            
+            total=cantidad*8500
+            alert(total)
             break
         case "22000":
-            alert("elegiste el 5")
+           
+            total=cantidad*22000
+            alert(total)
             break
         case "9000":
-            alert("elegiste el 6")
+            
+            total=cantidad*9000
+            alert(total)
             break
         case "25000":
-            alert("elegiste el 7")
+           descuento=10000
+        
+        total=cantidad*25000-10000
+        alert(total)
             break
         case "27000":
-            alert("elegiste el 8")
+            descuento=10000
+        
+        total=cantidad*27000-10000
+        alert(total)
             break
         case "12500":
-            alert("elegiste el 9")
+            
+            total=cantidad*12500
+            alert(total)
         break
         case "20000":
-            alert("elegiste el 10")
+          descuento=10000 
+       
+        total=cantidad*20000-10000
+        alert(total)
         break
         default :
             alert("no sabe no contesta")
